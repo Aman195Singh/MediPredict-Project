@@ -1,0 +1,31 @@
+# Python / Backend
+backend/venv/
+backend/env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+medipredict.db
+
+# Environment variables
+.env
+backend/.env
+front end part/.env
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.npm/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.gemini/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
