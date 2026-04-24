@@ -52,7 +52,9 @@ const HeroSection = () => (
       <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
         {['Diabetes', 'Heart Disease', 'Kidney Disease', 'Liver Disease'].map((d, i) => (
           <div key={d} className="rounded-xl border border-border bg-card p-4 text-center shadow-sm hover:shadow-md transition-shadow" style={{ animationDelay: `${0.3 + i * 0.1}s` }}>
-            <div className="text-2xl mb-1">{['🩸', '❤️', '🫘', '🫁'][i]}</div>
+            <div className="flex justify-center mb-2">
+              <img src={['/icons/diabetes.png', '/icons/heart.png', '/icons/kidney.png', '/icons/liver.png'][i]} alt={d} className="w-8 h-8 object-contain" />
+            </div>
             <p className="text-xs font-medium text-muted-foreground">{d}</p>
           </div>
         ))}
